@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        font-size: 2rem;
+        background: lightgray;
+        text-transform: uppercase;
+      }
+      .colors {
+        background: red;
+        color: white;
+      }
+      .text {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+      }
+      .red {
+        background: red;
+        color: white;
+      }
+      .blue {
+        background: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <button class="btn" id="btn">click me</button>
+    <h2>hello world</h2>
+    <h2>hello people</h2>
+    <ul id="result">
+      <li class="special">apple</li>
+      <li>banana</li>
+      <li class="special">orange</li>
+      <li>pear</li>
+      <li class="special">tomato</li>
+      <li>peach</li>
+      <li class="special last">mango</li>
+    </ul>
+    <!-- parent element -->
+    <div id="outer_div">
+      <h3>Hello outer_div</h3>
+      <div class="inner_div">
+        <h4>Hello inner_div</h4>
+        <h5>Another element inside inner_div</h5>
+      </div>
+    </div>
+
+    <!-- next/previous sibling -->
+    <ul id="result2">
+      <li class="first">first</li>
+      <li>list item 2</li>
+      <li>list item 3</li>
+      <li id="last">last</li>
+    </ul>
+
+    <!-- nodeValue, textContext -->
+    <h1 id="special_st">this is special content</h1>
+
+    <!-- get/set attr -->
+    <ul>
+      <li class="first_attr" id="first_id">i have a class of first</li>
+      <a href="first.html" id="link">random link</a>
+      <li>i have no attributes</li>
+    </ul>
+
+    <!-- classList, className -->
+    <h1 id="first_ele" class="colors">I'm first element</h1>
+    <h1 id="second_ele">I'm second element</h1>
+    <h1 id="third_ele">I'm third element</h1>
+
+    <!-- createElement, createTextNode, appendChild -->
+    <div id="result3">
+      <h1 class="red">I'm the child of result3</h1>
+    </div>
+
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
